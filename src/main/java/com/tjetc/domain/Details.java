@@ -1,4 +1,5 @@
 package com.tjetc.domain;
+
 //商品详情描述
 public class Details {
     private String detailsId;//商品详情编号
@@ -12,21 +13,6 @@ public class Details {
     private int status;//1.已上架0.已下架
 
     public Details() {
-    }
-
-    @Override
-    public String toString() {
-        return "Details{" +
-                "detailsId='" + detailsId + '\'' +
-                ", goodsName='" + goodsName + '\'' +
-                ", price=" + price +
-                ", color='" + color + '\'' +
-                ", memory='" + memory + '\'' +
-                ", describe='" + describe + '\'' +
-                ", num=" + num +
-                ", img='" + img + '\'' +
-                ", status=" + status +
-                '}';
     }
 
     public String getDetailsId() {
@@ -99,5 +85,20 @@ public class Details {
 
     public void setStatus(int status) {
         this.status = status;
+    }
+
+    @Override
+    public String toString() {
+        return "Details{" +
+                "detailsId='" + detailsId + '\'' +
+                ", goodsName='" + goodsName + '\'' +
+                ", price=" + price +
+                ", color='" + color + '\'' +
+                ", memory='" + memory + '\'' +
+                ", describe='" + describe + '\'' +
+                ", num=" + num +
+                ", img='" + img + '\'' +
+                ", status=" + status +
+                '}';
     }
 }
