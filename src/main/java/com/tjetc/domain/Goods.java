@@ -1,43 +1,43 @@
 package com.tjetc.domain;
 //商品实体类
 public class Goods {
-    private int goodsId;//商品编号
-    private String typeId;//商品类型编号
-    private String detailsId;//商品详情编号
+    private String goodsId;//商品编号
+    private GoodsType type;//商品类型
+    private GoodsDetails details;//商品详情编号
 
     public Goods() {
     }
 
-    public int getGoodsId() {
+    public String getGoodsId() {
         return goodsId;
     }
 
-    public void setGoodsId(int goodsId) {
+    public void setGoodsId(String goodsId) {
         this.goodsId = goodsId;
     }
 
-    public String getTypeId() {
-        return typeId;
+    public GoodsType getType() {
+        return type;
     }
 
-    public void setTypeId(String typeId) {
-        this.typeId = typeId;
+    public void setType(GoodsType type) {
+        this.type = type;
     }
 
-    public String getDetailsId() {
-        return detailsId;
+    public GoodsDetails getDetails() {
+        return details;
     }
 
-    public void setDetailsId(String detailsId) {
-        this.detailsId = detailsId;
+    public void setDetails(GoodsDetails details) {
+        this.details = details;
     }
 
     @Override
     public String toString() {
         return "Goods{" +
-                "goodsId=" + goodsId +
-                ", typeId='" + typeId + '\'' +
-                ", detailsId='" + detailsId + '\'' +
+                "goodsId='" + goodsId + '\'' +
+                ", type=" + type +
+                ", details=" + details +
                 '}';
     }
 }
